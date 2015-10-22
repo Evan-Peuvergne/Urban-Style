@@ -1,0 +1,98 @@
+
+
+
+
+	/**
+	*
+	*	SWITCH|SCSS
+	*	-------------------
+	*	DESC | Switch control styles definition
+	*	LOCATION | > styles > modules > controls > switch.scss
+	*
+	*/
+
+
+
+	
+	
+
+	/*----------  VARIABLES  ----------*/
+
+
+
+	// Dimensions
+
+	$switch-dimensions-input-width: 3em;
+	// $switch-dimensions-input-height: 0.5em;
+	
+
+
+
+
+
+
+
+
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.switch{
+
+		display: block;
+
+	}
+
+
+	// Labels
+
+	.switch .switch-label{
+
+		display: inline-block;
+		vertical-align: baseline;
+		text-transform: uppercase;
+		color: $color-primary-lte;
+
+	}
+
+	.switch.active-left .switch-label:first-child{ color: $color-primary; }
+	.switch.active-right .switch-label:last-child{ color: $color-primary; }
+
+
+	// Input
+
+	.switch .switch-input{
+
+		display: inline-block;
+		position: relative;
+		vertical-align: baseline;
+		width: $switch-dimensions-input-width;
+		height: 1em;
+		border-radius: 0.8em;
+		border: 1px solid $color-primary;
+		margin: 0 0.7em;
+
+		&::before{
+
+			display: block;
+			content: '';
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			width: calc(1em - 6px);
+			height: calc(1em - 6px);
+			border-radius: calc(0.8em - 4px);
+			background-color: $color-primary;
+			transition: transform 0.2s ease;
+
+		}
+
+	}
+
+	.switch.active-right .switch-input::before{ transform: translate3d(calc(#{$switch-dimensions-input-width} - 1em), 0, 0); }
+	
+	

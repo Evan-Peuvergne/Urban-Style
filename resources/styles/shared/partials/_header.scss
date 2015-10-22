@@ -1,0 +1,87 @@
+
+
+
+
+	/**
+	*
+	*	HEADER|SCSS
+	*	--------------------
+	*	DESC | Define header shared styles
+	*	LOCATION | > shared > partials > header.scss
+	*
+	*/
+
+
+
+
+
+
+	/*----------  VARIABLES  ----------*/
+
+
+
+	// Dimensions
+
+	$header-dimensions-height: 80px;
+
+
+	// Spacings
+
+	$header-spacings-vertical-margin: 2em;
+
+
+
+
+
+
+
+
+
+
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.header{
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: $header-dimensions-height;
+		margin: $header-spacings-vertical-margin 0;
+		font-family: $text-font-titles;
+
+	}
+
+
+	// Logo
+
+	.header-logo{
+
+		display: block;
+		height: 100%;
+
+		img{
+
+			display: block;
+			height: 100%;
+
+		}
+
+	}
+
+
+	// Switch
+	
+	.header-gender-switch{
+		
+		display: block;
+		font-size: 0.9em;
+
+	}
+	
