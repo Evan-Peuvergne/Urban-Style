@@ -1,0 +1,166 @@
+
+
+
+
+	/**
+	*
+	*	PRODUCT|SCSS
+	*	--------------------
+	*	DESC | Product page styles definition
+	*	LOCATION | > styles > pages > product.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	&{
+
+			
+
+	}
+
+
+	// Breadcrumb
+
+	.breadcrumb{ margin-bottom: 2em; }
+
+
+	// Infos
+
+	.product-infos{
+		
+		display: flex;
+		height: 700px;
+		margin-bottom: $spacing-base*2;
+
+
+		// Photos
+
+		.product-infos-photos{
+			
+			height: 100%;
+			margin-right: 2em;
+
+
+			// Thumbs
+
+			.photos-thumbs{
+				
+				display: inline-block;
+				height: 100%;
+				margin-right: 2em;
+
+
+				img{
+
+					display: block;
+					height: calc(33.3333333% - (3em/2) + 3px);
+					margin-bottom: 2em;
+					border: 1px solid $color-primary-lte;
+
+					&:last-child{ margin-bottom: 2em; }
+
+				}
+
+			}
+
+
+			// Main
+
+			.photos-main{
+
+				display: inline-block;
+				height: 100%;
+				border: 1px solid $color-primary-lte;
+
+			}
+
+		}
+
+
+		// Content
+
+		.product-infos-content{
+
+			flex: 1;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2em;
+
+
+			// Title
+
+			.content-title{
+
+				display: block;
+				font-family: $text-font-content;
+				font-size: 4em;
+				text-align: center;
+
+			}
+
+
+			// Links
+
+			a{
+
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1.2em;
+				margin-top: 2em;
+
+				&:after{
+
+					display: inline-block;
+					vertical-align: middle;
+					font-family: $text-font-icons;
+					content: "\f105";
+					font-size: 0.9em;
+					margin-left: 0.3em;
+					transform: translate3d(0, -3%, 0);
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+	// Looks
+
+	.product-looks{
+
+		
+		// Title
+
+		.product-looks-title{
+			
+			display: block;
+			font-size: 1.2em;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-bottom: 1.5em;
+
+		}
+
+	}
+	
+	

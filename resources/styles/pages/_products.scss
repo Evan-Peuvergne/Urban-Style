@@ -42,6 +42,7 @@
 	.products-banner{
 		
 		position: relative;
+		margin-bottom: $spacing-base;
 
 		
 		// Title
@@ -53,7 +54,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate3d(-50%, -50%, 0);
-			padding: 0.8em 1em 0.6em 1em;
+			padding: 0.8em 1.5em 0.6em 1.5em;
 			background-color: rgba($color-white, 0.9);
 			font-family: $text-font-content;
 			font-size: 2em;
@@ -69,6 +70,40 @@
 			width: 100%;
 
 		}
+
+	}
+
+
+	// Filters
+
+	.products-filters{
+
+		margin-bottom: $spacing-base + 1em;
+
+
+		// Dropdowns
+
+		.dropdown{
+
+			width: calc(50% - #{$spacing-base/2});
+			vertical-align: top;
+			margin-right: $spacing-base;
+
+			&:nth-child(2n){ margin-right: 0; margin-left: -4.5px; }
+
+		}
+
+	}
+
+
+	// Grid
+
+	.products-grid{
+
+		
+		// Thumb
+
+		.product-thumb{ margin-bottom: $spacing-base; }
 
 	}
 	
