@@ -146,7 +146,7 @@
 
 	// Dev
 
-	gulp.task('dev', ['sass'], function ()
+	gulp.task('dev', ['html', 'sass', 'js'], function ()
 	{
 
 		// Serve

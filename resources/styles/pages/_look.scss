@@ -1,0 +1,159 @@
+
+
+
+
+	/**
+	*
+	*	LOOK|SCSS
+	*	--------------------
+	*	DESC | Look page styles definition
+	*	LOCATION | > styles > pages > look.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+	/*----------  STYLES  ----------*/
+	
+
+
+	// Base
+
+	&{
+
+		
+
+	}	
+
+
+	// Breadcrumb
+
+	.breadcrumb{ margin-bottom: $spacing-base/2; }
+
+
+	// Content
+
+	.look-content{
+
+		text-align: left;
+
+		
+		// Title
+
+		.look-content-title{
+			
+			font-family: $text-font-content;
+			font-size: 3em;
+			margin-bottom: 0.3em;
+
+		}
+
+
+		// Subtitle
+
+		.look-content-subtitle{
+
+			text-transform: uppercase;
+			color: $color-primary-lte;
+			font-size: 1.3em;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+			margin-bottom: 1em;
+
+		}
+
+
+		// Actions
+
+		.look-content-actions{
+
+			margin: $spacing-base 0;
+
+
+			// Item
+
+			a{
+
+				display: inline-block;
+				margin-right: 3em;
+				text-decoration: none;
+
+				&:last-child{ margin-right: 0; }
+
+
+				// Icon
+
+				i{
+
+					display: block;
+					font-size: 1.5em;
+					margin-bottom: 0.5em;
+
+				}
+
+			}
+
+		}
+
+
+		// Text
+
+		.look-content-text{
+
+			p{
+
+				font-family: $text-font-content;
+				font-size: 1.2em;
+				line-height: 1.3;
+				margin-bottom: 1em;
+
+			}
+
+		}
+
+
+		// Tags
+
+		.look-content-tags{
+
+			text-transform: uppercase;
+			margin-top: 2em;
+
+			
+			// Title
+
+			.tags-title{
+
+				font-weight: 500;
+				margin-right: 1em;
+
+			}
+
+
+			// Items
+
+			span{
+				
+				font-size: 0.9em;
+				margin-right: 0.5em;
+
+			}
+
+		}
+
+	}
+
+
+	// Similars
+
+	.look-similars{
+
+		margin-top: $spacing-base*2;
+
+	}
+	

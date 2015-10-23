@@ -2,6 +2,7 @@
 
 
 
+
 	/**
 	*
 	*	MODULES|SCSS
@@ -23,9 +24,12 @@
 	// Components
 
 	@import "modules/components/thumbs/look";
+	@import "modules/components/thumbs/product";
 
 
 	// Controls
+
+	@import "modules/controls/breadcrumb";
 
 	@import "modules/controls/buttons";
 	@import "modules/controls/dropdown";

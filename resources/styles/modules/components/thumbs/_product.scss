@@ -1,0 +1,79 @@
+
+
+
+
+	/**
+	*
+	*	PRODUCT|SCSS
+	*	--------------------
+	*	DESC | Product thumb module styles definition
+	*	LOCATION | > styles > modules > components > thumbs > product.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.product-thumb{
+
+		
+		// Image
+
+		.product-thumb-photo{
+
+			display: block;
+			width: 100%;
+			border: 1px solid $color-primary-lte;
+			margin-bottom: 1em;
+
+		}
+
+
+		// Title
+
+		.product-thumb-title{
+
+			display: block;
+			font-weight: 500;
+			line-height: 1.1;
+			margin-bottom: 1em;
+
+		}
+
+
+		// Links
+
+		a{
+
+			display: block;
+			font-size: 0.9em;
+			margin-top: 0.8em;
+			text-decoration: none;
+
+			&:after{
+
+				display: inline-block;
+				vertical-align: middle;
+				content: "\f105";
+				font-family: $text-font-icons;
+				font-size: 0.9em;
+				margin-left: 0.4em;
+				transform: translate3d(0, -3%, 0);
+
+			}
+
+		}
+
+	}
+	
