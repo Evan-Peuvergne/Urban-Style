@@ -10,4 +10,79 @@
 	*	LOCATION | > shared > partials > footer.scss
 	*
 	*/
+
+
+
+
+
+
+
+
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.footer{
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: $spacing-base 0;
+		text-transform: uppercase;
+		font-weight: 700;
+
+	}
+
+
+	// Copyright
+
+	.footer-copyright{
+
+		color: $color-primary-lte;
+		font-size: 0.9em;
+
+	}
+
+
+
+	// Navigation
+
+	.footer-nav{
+
+		ul{
+
+			
+			// Item
+
+			li{
+
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 2em;
+
+				&:last-child{ margin-right: 0; }
+
+
+				// Link
+				
+				a{
+
+					font-size: 0.9em;
+					text-decoration: none;
+					transition: color 0.2s ease;
+
+					&:hover{ color: $color-primary-lte; }
+
+				}
+
+			}
+
+		}
+
+	}
+	
 	

@@ -1,0 +1,179 @@
+
+
+
+
+	/**
+	*
+	*	DROPDOWN|SCSS
+	*	---------------------
+	*	DESC | Dropdown module styles definition
+	*	LOCATION | styles > modules > controls > dropdown.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+	/*----------  VARIABLES  ----------*/
+
+
+
+	// Dimensions
+
+
+	$dropdown-dimensions-height: 3.5em;
+
+
+
+
+
+
+
+	
+
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.dropdown{
+
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		height: $dropdown-dimensions-height;
+		padding: 0;
+		border-bottom: 2px solid lighten($color-primary-lte, 15%);
+		background-color: $color-white;
+		user-select: none;
+
+
+		// Label
+
+		.dropdown-label{
+
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			padding: 0 1em;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $color-primary-lte;
+			cursor: pointer;
+
+
+			&:after{
+
+				display: block;
+				content: "\f107";
+				font-family: FontAwesome;
+				position: absolute;
+				top: 50%;
+				right: 1em;
+				transform: translate3d(0, -50%, 0);
+				transition: transform 0.2s ease;
+
+			}
+
+		}
+
+
+		// Items
+
+		.dropdown-items{
+
+			display: none;
+			position: absolute;
+			top: calc(#{$dropdown-dimensions-height} + 2px);
+			left: 0;
+			padding: 0.5em 0;
+
+			li{
+
+				display: block;
+				width: 100%;
+				padding: 1em;
+				text-transform: uppercase;
+				cursor: pointer;
+
+			}
+
+		}
+
+		&.open .dropdown-items{
+
+			display: block;
+			animation: SlideInUpSubtle 0.3s ease;
+			animation-fill-mode: both;
+
+		}
+
+		&.close .dropdown-items{
+
+			display: none;
+
+		}
+
+	}
+
+
+	
+	// Color
+
+	.dropdown-colors{
+
+		
+		// Label
+
+		.dropdown-label{
+
+			i{
+
+				display: inline-block;
+				vertical-align: middle;
+				width: 25px;
+				height: 25px;
+				border: 1px solid $color-primary-lte;
+				border-radius: 12.5px;
+				margin-right: 0.8em;
+				transform: translate3d(0, -5%, 0);
+
+			}
+
+		}
+
+
+		// Items
+
+		.dropdown-items{
+
+			li{
+
+				i{
+
+					display: inline-block;
+					vertical-align: middle;
+					width: 25px;
+					height: 25px;
+					border: 1px solid $color-primary-lte;
+					border-radius: 12.5px;
+					margin-right: 0.8em;
+					transform: translate3d(0, -5%, 0);
+
+				}
+
+			}
+
+		}
+
+	}
+	

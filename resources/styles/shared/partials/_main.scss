@@ -10,4 +10,24 @@
 	*	LOCATION | > shared > partials > main.scss
 	*
 	*/
+
+
+
+
+
+
+	
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.main{
+
+		@include make-row();
+
+	}
+	
 	

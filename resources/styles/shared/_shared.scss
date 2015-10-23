@@ -24,6 +24,17 @@
 
 	@import "shared/reset";
 	@import "shared/global";
+	@import "shared/animations";
+
+
+	// Assets
+
+	@import "shared/assets/icons";
+
+
+	// Layout
+
+	@import "shared/layout/grid";
 
 
 	// Partials
@@ -31,10 +42,5 @@
 	@import "shared/partials/header";
 	@import "shared/partials/main";
 	@import "shared/partials/footer";
-
-
-	// Layout
-
-	@import "shared/layout/grid";
 	
 	

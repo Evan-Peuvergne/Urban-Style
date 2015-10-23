@@ -1,0 +1,43 @@
+
+
+
+
+	/**
+	*
+	*	ANIMATIONS|SCCS
+	*	-------------------------
+	*	DESC | Define CSS animations
+	*	LOCATION | > styles > shared > animations.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+
+	/*----------  BASICS  ----------*/
+
+
+
+	// Fade
+
+	@keyframes FadeIn { 0%{ opacity: 0; } 100%{ opacity: 1; } }
+	@keyframes FadeOut { 0%{ opacity: 1; } 100%{ opacity: 0; } }
+
+
+	// Slide
+
+	// Slide > Up
+
+	@keyframes SlideInUp{ 0%{ opacity: 0; transform: translate3d(0, -100%, 0); } 100%{ opacity: 1; transform: none; } }
+	@keyframes SlideOutUp{ 0%{ opacity: 1; transform: none; } 100%{ opacity: 0; transform: translate3d(0, -100%, 0); } }
+
+	@keyframes SlideInUpSubtle{ 0%{ opacity: 0; transform: translate3d(0, -2em, 0); } 100%{ opacity: 1; transform: none; } }
+	@keyframes SlideOutUpSubtle{ 0%{ opacity: 1; transform: none; } 100%{ opacity: 0; transform: translate3d(0, -2em, 0); } }
+
+	
+	

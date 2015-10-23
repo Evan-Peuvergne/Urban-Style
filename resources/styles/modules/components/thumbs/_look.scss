@@ -1,0 +1,161 @@
+
+
+
+
+	/**
+	*
+	*	LOOK|SCSS
+	*	----------------------
+	*	DESC | Manage looks thumbs styles
+	*	LOCATION | > styles > modules > components > thumbs > look.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+	
+
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	.look-thumb{
+
+		
+		// Picture
+
+		.look-thumb-picture{
+			
+			position: relative;
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			margin-bottom: 1.5em;
+
+
+			// Button
+
+			.look-thumb-button{
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				border: 2px solid $color-white;
+				position: absolute;
+				z-index: 10;
+				top: calc(50% - 50px);
+				left: calc(50% - 50px);	
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $color-white;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				opacity: 0;
+				transform: translate3d(0, -3em, 0);
+				transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.3s ease, color 0.3s ease;
+
+
+				// Hover
+
+				&:hover{
+
+					background-color: $color-white;
+					color: $color-primary;
+
+				}		
+
+			}
+
+
+			// Image
+
+			img{
+
+				display: block;
+				width: 100%;
+				transition: scale 0.3s ease, filter 0.3s ease;
+
+			}
+
+		}
+
+
+		// Infos
+
+		.look-thumb-infos{
+
+			
+			// Subtitle
+
+			.look-thumb-subtitle{
+				
+				display: block;
+				color: $color-primary-lte;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				margin-bottom: 0.8em;
+				text-decoration: none;
+
+			}
+
+
+			// Title
+
+			.look-thumb-title{
+
+				display: block;
+				font-size: 1.5em;
+				font-family: $text-font-content;
+				text-decoration: none;
+
+			}
+
+		}
+
+
+		// Hover
+
+		&:hover{
+
+			
+			// Picture
+
+			.look-thumb-picture{
+
+				
+				// Button
+
+				.look-thumb-button{
+
+					transform: none;
+					opacity: 1;
+
+				}
+
+
+				// Image
+
+				img{
+
+					filter: blur(4px);
+
+				}
+
+			}
+
+		}
+
+	}
+	

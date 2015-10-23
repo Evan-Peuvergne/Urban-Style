@@ -44,6 +44,8 @@
 	.switch{
 
 		display: block;
+		cursor: pointer;
+		user-select: none;
 
 	}
 
@@ -59,8 +61,8 @@
 
 	}
 
-	.switch.active-left .switch-label:first-child{ color: $color-primary; }
-	.switch.active-right .switch-label:last-child{ color: $color-primary; }
+	.switch.active-left .switch-label-left{ color: $color-primary; }
+	.switch.active-right .switch-label-right{ color: $color-primary; }
 
 
 	// Input

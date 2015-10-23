@@ -35,9 +35,112 @@
 
 	&{
 
-		
+				
+
+	}
+
+
+	// Main look
+
+	.home-main-look{
+
+		display: block;
+		position: relative;
+		text-decoration: none;
+		overflow: hidden;
+		margin-bottom: $spacing-base;
+
+
+		// Infos
+
+		.look-infos{
+
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 5em;
+			width: calc(50% - 10em);
+			padding: 3em;
+			background-color: rgba($color-white, 0.9);
+			transform: translate3d(0, -50%, 0);
+
+
+			// Subtitle
+
+			.look-infos-subtitle{
+
+				display: block;
+				text-align: center;
+				text-transform: uppercase;
+				color: $color-primary-lte;
+				font-weight: 700;
+				margin-bottom: 1.5em;
+
+			}
+
+
+			// Title
+
+			.look-infos-title{
+
+				display: block;
+				text-align: center;	
+				font-family: $text-font-content;
+				font-size: 3em;
+
+			}
+
+		}
+
+
+		// Background
+
+		.look-background{
+
+			display: block;
+			width: 100%;
+			height: auto;
+
+		}
+
+	}
+
+
+	// Filters
+
+	.home-filters{
+
+		margin-bottom: $spacing-base + 1em;
+
+
+		// Dropdowns
+
+		.dropdown{
+
+			width: calc(50% - #{$spacing-base/2});
+			vertical-align: top;
+			margin-right: $spacing-base;
+
+			&:nth-child(2n){ margin-right: 0; margin-left: -4.5px; }
+
+		}
 
 	}
 	
+
+	// Grid
+
+	.home-grid{
+
+
+		// Thumb
+
+		.look-thumb{
+
+			margin-bottom: $spacing-base;
+
+		}
+
+	}
 	
 	

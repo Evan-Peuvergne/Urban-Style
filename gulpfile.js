@@ -111,6 +111,9 @@
 			.pipe(concat('app.js'))
 			.pipe(gulp.dest('assets/js/scripts'));
 
+		// Reload
+		browserSync.reload();
+
 	});
 
 
