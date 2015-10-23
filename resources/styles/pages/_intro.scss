@@ -1,0 +1,96 @@
+
+
+
+
+	/**
+	*
+	*	INTRO|SCSS
+	*	--------------------
+	*	DESC | Intro page styles defintion
+	*	LOCATION | > styles > pages > intro.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+	
+
+	/*----------  STYLES  ----------*/
+
+
+
+	// Base
+
+	&{
+		
+		position: relative;
+		background-image: url(../medias/images/intro.jpg);
+		background-size: cover;
+		background-position: center;
+
+	}
+
+
+	// Logo
+
+	.intro-logo{
+		
+		display: block;
+		position: absolute;
+		top: $spacing-base;
+		left: 50%;
+		transform: translate3d(-50%, 0, 0);
+		text-decoration: none;
+
+		img{
+
+			display: block;
+			width: 8em;
+
+		}
+
+	}
+
+
+	// Gender
+
+	.intro-gender{
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		padding-top: 20%;
+		text-decoration: none;
+
+
+		// Button
+
+		.intro-gender-button{
+
+			display: block;
+			width: 50%;
+			min-width: 200px;
+			padding: 0.8em 1em 0.6em 1em;
+			font-family: $text-font-content;
+			font-size: 2em;
+			text-align: center;
+			background-color: rgba($color-white, 0.9);
+			text-decoration: none;
+
+		}
+
+	}
+
+	.intro-gender.intro-gender-man{ left: 0; }
+	.intro-gender.intro-gender-woman{ right: 0; }
+	
+	
