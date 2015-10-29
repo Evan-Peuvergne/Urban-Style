@@ -1,0 +1,65 @@
+
+
+
+
+	/**
+	*
+	*	FONTS|SCSS
+	*	-------------------------
+	*	DESC | Fonts loading styles definition
+	*	LOCATION | > styles > shared > assets > fonts.scss
+	*
+	*/
+
+
+
+
+
+
+
+
+
+
+
+	/*----------  FONT FACES  ----------*/
+
+
+
+	// Avenir
+
+	@font-face {
+
+	  	font-family: 'Avenir';
+	  	src: url('../medias/fonts/avenir/Avenir.eot?#iefix') format('embedded-opentype'),  
+	  	     url('../medias/fonts/avenir/Avenir.woff') format('woff'),
+	  	     url('../medias/fonts/avenir/Avenir.ttf')  format('truetype'),
+	  	     url('../medias/fonts/avenir/Avenir.svg#Avenir') format('svg');
+	  	font-weight: normal;
+	  	font-style: normal;
+
+	}
+
+
+	// Marion
+
+	@font-face {
+
+	  	font-family: 'Marion';
+	  	src: url('../medias/fonts/marion/Marion.eot?#iefix') format('embedded-opentype'),  
+	  	     url('../medias/fonts/marion/Marion.woff') format('woff'),
+	  	     url('../medias/fonts/marion/Marion.ttf')  format('truetype'),
+	  	     url('../medias/fonts/marion/Marion.svg#Marion') format('svg');
+	  	font-weight: normal;
+	  	font-style: normal;
+
+	}
+
+
+
+
+
+
+
+
+	
+	
