@@ -85,8 +85,15 @@
 			text-align: center;
 			background-color: rgba($color-white, 0.9);
 			text-decoration: none;
+			// transform: translate3d(-1em, 0, 0);
+			opacity: 0.6;
+			transition: transform 0.2s ease, opacity 0.2s ease;
 
 		}
+
+		// .intro-gender.intro-gender-woman .intro-gender-button{ transform: translate3d(-1em, 0, 0); }
+
+		&:hover .intro-gender-button{ transform: translate3d(0, 0, 0); opacity: 1; }
 
 	}
 
